@@ -5,4 +5,5 @@ for file in files:
             contents = file_obj.read()
             print(contents)
     except FileNotFoundError as error:
-        print(f"File {file} not found")
+        # print(f"File {file} not found")
+        pass
