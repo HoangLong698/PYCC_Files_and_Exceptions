@@ -25,8 +25,9 @@ def get_new_username():
 def greet_user():
     # Great the user by name.
     username = get_stored_username()
-    if username:
-        print(f"Welcome back, {username}")   
+    prompt = input(f"Your name is {username} right? [Y|y] or [N|n]: ")
+    if prompt.lower() == "y":
+            print(f"Welcome back, {username}")   
     else:
         username = get_new_username()
         print(f"We'll remember you when you come back. {username}")
